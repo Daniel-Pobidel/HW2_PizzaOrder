@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">HW2_PizzaOrder</string>
+    <string name="pizza_order">Pizza Order</string>
+    <string name="todo">TODO</string>
+    <string name="choose_your_pizza">Choose your pizza:</string>
+    <string name="choose_size">Choose size:</string>
+    <string name="choose_pizza_size">Choose pizza size:</string>
+    <string name="extra_toppings_1_69_each">Extra Toppings($1.69 each)</string>
+    <string name="xlarge_15_99">XLarge($15.99)</string>
+    <string name="large_13_99">Large($13.99)</string>
+    <string name="medium_9_99">Medium($9.99)</string>
+    <string name="extra_cheese">Extra Cheese</string>
+    <string name="mushroom">Mushroom</string>
+    <string name="onions">Onions</string>
+    <string name="spinach">Spinach</string>
+    <string name="broccoli">Broccoli</string>
+    <string name="black_olives">Black Olives</string>
+    <string name="tomatoes">Tomatoes</string>
+    <string name="total_price">Total Price:</string>
+    <string name="delivery">Delivery?</string>
+    <string name="yes_2_00">Yes, $2.00</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="cart_total_0_00">Cart total: $0.00</string>
+</resources>
