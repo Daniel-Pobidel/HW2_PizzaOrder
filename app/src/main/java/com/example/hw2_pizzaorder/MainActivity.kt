@@ -31,13 +31,23 @@ class MainActivity : AppCompatActivity() {
         pizza_list.setOnItemClickListener { _, _, position, _ ->
 
             // Based on the index of position selected, set the corresponding image
-            val imageId = when (position) {
+            val imageId = when (position)
+            {
                 0 -> R.drawable.pepperoni
                 1 -> R.drawable.margheritta
                 2 -> R.drawable.hawaiian
                 else -> R.drawable.bbq_chicken
             }
             pizza_pic.setImageResource(imageId)
+
+            //Text displaying pizza type above image
+            pizza_type_text.text= when(position)
+            {
+                0-> "Pepperoni"
+                1->"Margheritta"
+                2->"Hawaiian"
+                else-> "BBQ Chicken"
+            }
         }
         updatePrice()
 
@@ -82,8 +92,15 @@ class MainActivity : AppCompatActivity() {
         updatePrice()
     }
 
-    fun addToCartButton(view: View){
+    fun addToCartButton(view: View)
+    {
         cart_price+=total_price
+        cart_text.text=(String.format("Cart total: $%.2f", cart_price))
+    }
+
+    fun resetCart(view: View)
+    {
+        cart_price = 0.0
         cart_text.text=(String.format("Cart total: $%.2f", cart_price))
     }
 
